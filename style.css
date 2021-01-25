@@ -1,59 +1,96 @@
 body {
     font-family: "Space Mono", sans-serif;
-    height: 100%;
 }
 
-.logo {
-    width: 233px;
-    height: 25px;
+.title {
+    margin-left: 30px;
     font-size: 14px;
-    margin: 40px 0 0 77px;
     color: #333333;
 }
 
-.container { 
+.container {
     display: flex;
-    margin: 150px 200px 200px 77px;
+    flex-direction: column;
+    margin: 50px 30px 100px 30px;
 }
 
-img {
-    height: 450px;
-}
-
-.container-text {
-    margin-left: 200px;
-}
-
-h1 {
-    width: 550px;
-    font-size: 58px;
+.badNews {
+    font-size: 38px;
     font-weight: 700;
     color: #333333;
     word-spacing: 5px;
 }
 
-p {
-    font-size: 22px;
-    width: 400px;
-    margin-top: 35px;
+.description {
+    font-size: 14px;
     color: #4F4F4F;
     word-spacing: 5px;
 }
 
 button {
-    font-family: 'Space Mono';
-    font-size: 14px;
     border: none;
+    font-family: 'Space Mono';
+    font-size: 10px;
     color: #FFFF;
-    font-weight: bold;
+    font-weight: 700;
     background-color: #333333;
     padding: 20px 35px 20px 35px;
     margin-top: 50px;
     text-transform: uppercase;
 }
 
-.contact {
+footer {
     text-align: center;
-    margin-top: 240px;
+    font-size: 12px;
+}
+
+
+@media only screen and (min-width: 593px) {
+
+    .title {
+        font-size: 18px;
+        margin: 40px 0 0 77px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        margin: 150px 200px 200px 0px;
+    }
+
+    img {
+        height: 450px;
+    }
+
+    .badNews {
+        width: 450px;
+        font-size: 58px;
+    }
+
+    .description {
+        font-size: 22px;
+        width: 420px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .container {
+        margin-left: 77px;
+    }
+
+    .container-text {
+        margin-left: 200px;
+    }
+
+    .badNews {
+        width: 550px;
+        font-size: 58px;
+    }
+
 }
 
